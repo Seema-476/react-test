@@ -1,5 +1,6 @@
 import React from 'react'
-import FormValidation from '../../common/FormValidation'
+// import FormValidation from '../contact/FormValidation'
+import FormValidation from '../contact/FormValidation'
 
 const contact = () => {
   return (

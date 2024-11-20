@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import Events from './Events';
-import Programmes from './Programmes';
-import OnDemand from './OnDemand';
-import { SIDEBAR_BUTTON } from './Helper';
+import { SIDEBAR_BUTTON } from '../../common/Helper';
+import OnDemand from '../../common/OnDemand'
+import Programmes from '../../common/Programmes';
+import Events from '../../common/Events';
 
 const Sidebar = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -41,7 +41,7 @@ const Sidebar = () => {
                 <div onClick={handleClick}>
                     {SIDEBAR_BUTTON.map((obj) => (
                         <div key={obj.id} className={`mb-8 flex px-5 ${active === obj.id ? 'active' : ''}`}>
-                            <a href="#" id={obj.id} onClick={handleClick} className={`sidebar-items-svg text-2xl text-white flex items-center gap-4 ${active === obj.id ? 'text-slate-900' : ''}`}>{obj.text}
+                            <a href="#" id={obj.id} onClick={handleClick} className={`sidebar-items-svg text-2xl text-white flex items-center gap-4 ${active === 'active' ? '!text-black' : '!text-white'}`}>{obj.text}
                             </a>
                         </div>
                     ))}
