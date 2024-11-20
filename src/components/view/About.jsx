@@ -4,7 +4,7 @@ import Hooks from '../../common/Hooks'
 const About = () => {
   return (
     <div>
-      <Hooks/>
+      <Hooks />
     </div>
   )
 }
