@@ -1,12 +1,12 @@
 export const NESTED_ITEM = [
-    {
-        list: "Lorem",
-        content: [
-            {
-                listBtn: "Lorem ipsum dolor sit amet adipisicing elit.",
-            },
-        ]
-    },
+    // {
+    //     list: "Lorem",
+    //     content: [
+    //         {
+    //             listBtn: "Lorem ipsum dolor sit amet adipisicing elit.",
+    //         },
+    //     ]
+    // },
     {
         list: "About website",
         content: [
@@ -29,7 +29,6 @@ export const NESTED_ITEM = [
             },
         ]
     },
-    // Add more objects as needed
 ];
 export const SIDEBAR_BUTTON = [
     {
