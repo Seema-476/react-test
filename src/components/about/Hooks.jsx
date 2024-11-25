@@ -29,7 +29,6 @@ const Hooks = () => {
   return (
     <div className='py-12'>
       <div className='container'>
-        <p></p>
         {/* use state */}
         <div className='text-center '>
           <p className='text-3xl text-black opacity-60'>{name}</p>

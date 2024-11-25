@@ -40,8 +40,8 @@ const Sidebar = () => {
             <div className={`h-screen max-w-[240px] w-full bg-blue-300 flex flex-col justify-between pt-8 max-md:fixed z-30 duration-700 ${openNav ? 'left-0' : 'left-[-100%]'}`}>
                 <div onClick={handleClick}>
                     {SIDEBAR_BUTTON.map((obj) => (
-                        <div key={obj.id} className={`mb-8 flex px-5 ${active === obj.id ? 'active' : ''}`}>
-                            <a href="#" id={obj.id} onClick={handleClick} className={`sidebar-items-svg text-2xl text-white flex items-center gap-4 ${active === 'active' ? '!text-black' : '!text-white'}`}>{obj.text}
+                        <div key={obj.id} className="mb-8 flex px-5">
+                            <a href="#" id={obj.id} onClick={handleClick} className={`sidebar-items-svg text-2xl text-white flex items-center gap-4 ${active === obj.id ? '!text-black' : ''}`}>{obj.text}
                             </a>
                         </div>
                     ))}
